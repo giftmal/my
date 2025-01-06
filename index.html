@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get your exclusive gift card easily and securely. Learn about the benefits and how you can use gift cards!">
+    <meta name="keywords" content="Gift Card, Redeem Gift Card, Benefits, Secure Payment">
+    <meta name="author" content="Your Company Name">
+    <title>Gift Card Information and Login</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero-section {
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            border-radius: 10px;
+        }
+
+        .hero-section h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .cta-btn {
+            background-color: #ff9800;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #e68900;
+        }
+
+        .info-section {
+            background-color: #fff;
+            padding: 40px 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .info-section h2 {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .info-section p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        .login-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .login-btn:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <h1>Welcome to Your Gift Card Portal!</h1>
+            <p>Learn how gift cards can make your shopping experience easier.</p>
+            <a href="#login" class="login-btn">Login</a>
+        </div>
+
+        <!-- Info Section -->
+        <div class="info-section">
+            <h2>What is a Gift Card and How Does It Work?</h2>
+            <p>
+                A gift card is a prepaid card that you can use to purchase products and services from a specific store or platform. 
+                It’s a great way to shop securely and conveniently. Whether you're buying for yourself or sending a gift to someone else, 
+                gift cards offer flexibility and ease of use.
+            </p>
+            <p>
+                <strong>Key Benefits:</strong>
+                <ul>
+                    <li>No need to carry cash.</li>
+                    <li>Perfect for gifting occasions.</li>
+                    <li>Available for various popular platforms like Amazon, Google Play, and iTunes.</li>
+                </ul>
+            </p>
+            <p>To redeem your gift card, simply click the "Claim Gift Card" button and follow the steps provided.</p>
+            <a href="#redeem" class="cta-btn">Claim Your Gift Card</a>
+        </div>
+
+        <!-- Redeem Section -->
+        <div id="redeem" class="info-section">
+            <h2>Redeem Your Gift Card</h2>
+            <form action="submit.php" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="card-type">Select Gift Card Type:</label>
+                <select id="card-type" name="card_type" required>
+                    <option value="amazon">Amazon</option>
+                    <option value="google-play">Google Play</option>
+                    <option value="itunes">iTunes</option>
+                </select>
+                <br><br>
+                <button type="submit" class="cta-btn">Submit</button>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>By proceeding, you agree to our <a href="/privacy-policy.html">Privacy Policy</a> and <a href="/terms.html">Terms of Service</a>.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
